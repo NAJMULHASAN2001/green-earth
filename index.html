@@ -1,11 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Earth</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font integration-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind + daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="bg-green-600 bg-base-100 shadow-sm py-2">
+            <div class="navbar  bg-green-600 w-11/12 mx-auto">
+                <div class="md:navbar-start">
+                    
+                <h2 class="font-bold text-white text-2xl">Green Earth</h2>
+                
+                </div>
+                <div class=" md:navbar-center gap-3 text-white">
+                    <a href="">About</a>
+                    <a href="">Gallary</a>
+                    <a href="">Plant a Tree</a>
+                </div>
+                <div class="md:navbar-end">
+                    <button class="btn bg-[#FACC15] text-green-500 font-bold rounded-3xl">Plant a Tree</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-------------------- banner----------------- -->
+        <section class="bg-[#CFF0DC]  mb-10 ">
+            <div class="min-h-[300px] grid grid-cols-1 lg:grid-cols-3 w-11/12 mx-auto">
+
+                <img class="border-1 hidden lg:block mx-auto" src="assets/hero-leaf1.png" alt="">
+
+                <div class="text-center space-y-5 flex flex-col items-center  justify-center h-full">
+                    <h1 class="font-bold text-3xl md:text-6xl ">Plant a Tree, Grow a Future</h1>
+                    <p>Join our mission to plant 1 million trees and make the Earth greener for future <br>
+
+                        generations.</p>
+                    <button class="btn bg-[#FACC15] text-green-500 font-bold rounded-3xl p-5">Get Involved</button>
+
+                </div>
+                    <img class="border-1 hidden lg:block mx-auto" src="assets/hero-leaf2.png" alt="">
+            </div>
+
+        </section>
+
+    </header>
+    <!-- ------------main -->
+    <main class="w-11/12 mx-auto bg-gray-200  ">
+        <h1 class="font-bold text-4xl text-center inter py-3 border-1">Choose Your Trees</h1>
+
+        <section class="lg:flex border-1 h-full min-h-[500px] gap-3">
+            <div class="md:w-3/20 border-1 ml-3 mb-5">
+                <h2 class="font-bold">Categories</h2>
+                <h2 id="category-container" class="bg-[#15803D] ">All Trees</h2>
+            
+               
+            </div>
+
+            <div class="w-13/20 border-1 grid lg:grid-cols-3 mx-auto">
+                <!-- 1st pic -->
+                <div class="card bg-base-100 w-96 shadow-sm mb-10 mx-auto">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="space-y-2 p-3">
+                        <h2 class="card-title mt-3">Mango Tree</h2>
+                        <p>A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
+                        </p>
+                        <div class="flex justify-between">
+                        <p class="bg-[#DCFCE7] px-2 rounded-xl">Fruit Tree</p>
+                        <p>৳500</p>
+                        </div>
+                        
+                        <button class="btn bg-[#15803D] text-white w-full">Add To Cart</button>
+                        
+                    </div>
+                </div>
+                <!-- 2nd pic -->
+                <div class="card bg-base-100 w-96 shadow-sm mb-10 mx-auto">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="space-y-2 p-3">
+                        <h2 class="card-title mt-3">Mango Tree</h2>
+                        <p>A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
+                        </p>
+                        <div class="flex justify-between">
+                        <p class="bg-[#DCFCE7] px-2 rounded-xl">Fruit Tree</p>
+                        <p>৳500</p>
+                        </div>
+                        
+                        <button class="btn bg-[#15803D] text-white w-full">Add To Cart</button>
+                        
+                    </div>
+                </div>
+                <!-- 3rd pic -->
+                <div class="card bg-base-100 w-96 shadow-sm mb-10 mx-auto">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="space-y-2 p-3">
+                        <h2 class="card-title mt-3">Mango Tree</h2>
+                        <p>A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
+                        </p>
+                        <div class="flex justify-between">
+                        <p class="bg-[#DCFCE7] px-2 rounded-xl">Fruit Tree</p>
+                        <p>৳500</p>
+                        </div>
+                        
+                        <button class="btn bg-[#15803D] text-white w-full">Add To Cart</button>
+                        
+                    </div>
+                </div>
+                <!-- 4th pic -->
+                <div class="card bg-base-100 w-96 shadow-sm mb-10 mx-auto">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="space-y-2 p-3">
+                        <h2 class="card-title mt-3">Mango Tree</h2>
+                        <p>A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
+                        </p>
+                        <div class="flex justify-between">
+                        <p class="bg-[#DCFCE7] px-2 rounded-xl">Fruit Tree</p>
+                        <p>৳500</p>
+                        </div>
+                        
+                        <button class="btn bg-[#15803D] text-white w-full">Add To Cart</button>
+                        
+                    </div>
+                </div>
+                <!-- 5th pic -->
+                <div class="card bg-base-100 w-96 shadow-sm mb-10 mx-auto">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="space-y-2 p-3">
+                        <h2 class="card-title mt-3">Mango Tree</h2>
+                        <p>A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
+                        </p>
+                        <div class="flex justify-between">
+                        <p class="bg-[#DCFCE7] px-2 rounded-xl">Fruit Tree</p>
+                        <p>৳500</p>
+                        </div>
+                        
+                        <button class="btn bg-[#15803D] text-white w-full">Add To Cart</button>
+                        
+                    </div>
+                </div>
+                <!-- 6th pic -->
+                <div class="card bg-base-100 w-96 shadow-sm mb-10 mx-auto">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="space-y-2 p-3">
+                        <h2 class="card-title mt-3">Mango Tree</h2>
+                        <p>A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
+                        </p>
+                        <div class="flex justify-between">
+                        <p class="bg-[#DCFCE7] px-2 rounded-xl">Fruit Tree</p>
+                        <p>৳500</p>
+                        </div>
+                        
+                        <button class="btn bg-[#15803D] text-white w-full">Add To Cart</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="w-4/20 border-1">
+                <h1 class="p-2">Your Cart</h1>
+
+                <section class="cart-container">
+                    <div class="bg-[#F0FDF4] mb-2 p-2">
+                        <h1>Mango Tree</h1>
+                        <p>৳500 x 1</p>
+                    </div>
+                </section>
+                <section class="flex justify-between p-2">
+                    <p class="font-bold">Total:</p>
+                    <p>৳1000</p>
+                </section>
+
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+
+    </footer>
+<script src="index.js"></script>
 </body>
+
 </html>
