@@ -117,9 +117,15 @@ const displayTreeByCategory =(plants) =>{
 
 }
 //----------------------add event listener--------------------
-// const cartBtns = document.getElementsByClassName('add-cart-btn')
-// const plantPrices = document.getElementsByClassName('plant-price')
+const cartBtns = document.getElementsByClassName('add-cart-btn')
+const plantPrices = document.getElementsByClassName('plant-price')
 // const total =
+for (let cartBtn of cartBtns ){
+    cartBtn.addEventListener("click", function(){
+        const getTitle =cartBtn
+        console.log(getTitle)
+    })
+}
 
 
 
