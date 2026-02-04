@@ -19,9 +19,9 @@ const displayAllTrees = (allPlants) => {
     allPlants.forEach(plant => {
         // console.log(plant.id)
         cardContainer.innerHTML += `
-        <div class="card bg-base-100 w-80 shadow-sm mb-10 mx-auto">
+        <div class="card bg-base-100 w-60 md:w-80 shadow-sm mb-10 mx-auto">
                     <figure>
-                        <img class="h-[250px] w-[300px]" src="${plant.image}"
+                        <img class="h-[250px] md:w-[300px]" src="${plant.image}"
                             alt="Shoes" />
                     </figure>
                     <div class="space-y-2 p-3">
@@ -96,9 +96,9 @@ const displayTreeByCategory = (plants) => {
     plants.forEach(plant => {
         console.log(plant)
         cardContainer.innerHTML += `
-                        <div class="card bg-base-100 w-80 shadow-sm mb-10 mx-auto">
+                        <div class="card bg-base-100 w-60 md:w-80 shadow-sm mb-10 mx-auto">
                     <figure>
-                        <img class="h-[250px] w-[300px]" src="${plant.image}"
+                        <img class="h-[250px] md:w-[300px]" src="${plant.image}"
                             alt="Shoes" />
                     </figure>
                     <div class="space-y-2 p-3">
