@@ -3,6 +3,7 @@ const categoryContainer = document.getElementById('category-container')
 const cardContainer = document.getElementById('card-container')
 const alltrees = document.getElementById('all-trees')
 
+
 //load every trees
 const loadAllTrees = () => {
     fetch('https://openapi.programming-hero.com/api/plants')
@@ -16,7 +17,7 @@ loadAllTrees()
 
 const displayAllTrees = (allPlants) => {
     allPlants.forEach(plant => {
-        // console.log(plant)
+        // console.log(plant.id)
         cardContainer.innerHTML += `
         <div class="card bg-base-100 w-80 shadow-sm mb-10 mx-auto">
                     <figure>
@@ -32,7 +33,7 @@ const displayAllTrees = (allPlants) => {
                         <p class="plant-price">৳ ${plant.price}</p>
                         </div>
                         
-                        <button class="btn add-cart-btn bg-[#15803D] text-white w-full">Add To Cart</button>
+                        <button id=${plant.id} class="btn add-cart-btn bg-[#15803D] text-white w-full">Add To Cart</button>
                         
                     </div>
         `
@@ -109,13 +110,16 @@ const displayTreeByCategory = (plants) => {
                         <p class="plant-price">৳ ${plant.price}</p>
                         </div>
                         
-                        <button class="btn add-cart-btn bg-[#15803D] text-white w-full">Add To Cart</button>
+                        <button id=${plant.id}  class="btn add-cart-btn bg-[#15803D] text-white w-full">Add To Cart</button>
                         
                     </div>
         `
-
+    // const allTreeId =document.getElementById(`${plant.id}`)
+    // console.log(allTreeId)
     cardContainer.addEventListener('click', (e) => {
+        console.log(e)
     if (e.target.classList.contains('add-cart-btn')) {
+        // getContainer.innerHTML=''
         const getContainer = document.getElementById('cart-container')
         getContainer.innerHTML += `
          <div class="bg-[#F0FDF4] mb-2 p-2">
